@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " y ",
+    "yxy"
+  ],
+  "key": {
+    "x": {
+      "item": "simple_spikes:iron_spikes"
+    },
+    "y": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "simple_spikes:diamond_spikes",
+    "count": 1
+  }
+}

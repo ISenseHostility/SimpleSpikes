@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " y ",
+    "yxy"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:gold_block"
+    },
+    "y": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "simple_spikes:gold_spikes",
+    "count": 3
+  }
+}

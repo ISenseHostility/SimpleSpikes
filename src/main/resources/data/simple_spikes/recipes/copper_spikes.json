@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " y ",
+    "yxy"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:copper_block"
+    },
+    "y": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "simple_spikes:copper_spikes",
+    "count": 3
+  }
+}

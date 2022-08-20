@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "simple_spikes:copper_spikes",
+    "simple_spikes:iron_spikes",
+    "simple_spikes:gold_spikes",
+    "simple_spikes:diamond_spikes",
+    "simple_spikes:netherite_spikes"
+    ]
+}
