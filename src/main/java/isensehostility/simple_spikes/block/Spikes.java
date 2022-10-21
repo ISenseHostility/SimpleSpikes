@@ -24,10 +24,12 @@ public class Spikes {
     public static final RegistryObject<Block> GOLD_SPIKES = BLOCKS.register("gold_spikes", GoldSpikes::new);
     public static final RegistryObject<Block> DIAMOND_SPIKES = BLOCKS.register("diamond_spikes", DiamondSpikes::new);
     public static final RegistryObject<Block> NETHERITE_SPIKES = BLOCKS.register("netherite_spikes", NetheriteSpikes::new);
+    public static final RegistryObject<Block> SLIME_SPIKES = BLOCKS.register("slime_spikes", SlimeSpikes::new);
 
     public static final RegistryObject<Item> COPPER_SPIKES_ITEM = ITEMS.register("copper_spikes", () -> new BlockItem(Spikes.COPPER_SPIKES.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> IRON_SPIKES_ITEM = ITEMS.register("iron_spikes", () -> new BlockItem(Spikes.IRON_SPIKES.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> GOLD_SPIKES_ITEM = ITEMS.register("gold_spikes", () -> new BlockItem(Spikes.GOLD_SPIKES.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> DIAMOND_SPIKES_ITEM = ITEMS.register("diamond_spikes", () -> new BlockItem(Spikes.DIAMOND_SPIKES.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
     public static final RegistryObject<Item> NETHERITE_SPIKES_ITEM = ITEMS.register("netherite_spikes", () -> new BlockItem(Spikes.NETHERITE_SPIKES.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+    public static final RegistryObject<Item> SLIME_SPIKES_ITEM = ITEMS.register("slime_spikes", () -> new BlockItem(Spikes.SLIME_SPIKES.get(), new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
 }

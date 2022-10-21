@@ -4,9 +4,12 @@
   "block.simple_spikes.gold_spikes": "Gold Spikes",
   "block.simple_spikes.diamond_spikes": "Diamond Spikes",
   "block.simple_spikes.netherite_spikes": "Netherite Spikes",
+  "block.simple_spikes.slime_spikes": "Slime Spikes",
 
   "death.attack.spike": "%1$s found out spikes are sharp",
   "death.attack.spikeIgnoreArmor": "%1$s was pierced by a spike",
+  "death.attack.slimeSpike": "%1$s didn't bounce high enough",
   "death.attack.spike.player": "%1$s's drink was spiked by %2$s",
-  "death.attack.spikeIgnoreArmor.player": "%1$s got penetrated by %2$s"
+  "death.attack.spikeIgnoreArmor.player": "%1$s got penetrated by %2$s",
+  "death.attack.slimeSpike.player": "%1$s got bounced by %2$s"
 }

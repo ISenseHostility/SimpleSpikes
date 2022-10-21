@@ -16,6 +16,7 @@ public class SimpleSpikes {
     public static class SpikeSources {
         public static final DamageSource SPIKE = new DamageSource("spike");
         public static final DamageSource SPIKE_IGNORE_ARMOR = new DamageSource("spikeIgnoreArmor").bypassArmor();
+        public static final DamageSource SLIME_SPIKE = new DamageSource("slimeSpike");
     }
 
     public enum SpikeTypes {
@@ -23,7 +24,8 @@ public class SimpleSpikes {
         IRON(2, SpikeSources.SPIKE),
         GOLD(2, SpikeSources.SPIKE),
         DIAMOND(4, SpikeSources.SPIKE),
-        NETHERITE(8, SpikeSources.SPIKE_IGNORE_ARMOR);
+        NETHERITE(8, SpikeSources.SPIKE_IGNORE_ARMOR),
+        SLIME(3, SpikeSources.SLIME_SPIKE);
 
         private final int damage;
         private final DamageSource source;

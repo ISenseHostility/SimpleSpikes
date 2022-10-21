@@ -5,7 +5,7 @@ issueTrackerURL=""
 
 [[mods]] #mandatory
 modId="simple_spikes" #mandatory
-version="1.19.2-1.0.0" #mandatory
+version="1.19.2-1.1.0" #mandatory
 displayName="Simple Spikes" #mandatory
 displayURL="https://www.curseforge.com/minecraft/mc-mods/simple-spikes"
 logoFile="logo.png" #optional

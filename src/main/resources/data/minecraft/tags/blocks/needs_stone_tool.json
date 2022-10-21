@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "simple_spikes:copper_spikes",
-    "simple_spikes:iron_spikes"
+    "simple_spikes:iron_spikes",
+    "simple_spikes:slime_spikes"
   ]
 }

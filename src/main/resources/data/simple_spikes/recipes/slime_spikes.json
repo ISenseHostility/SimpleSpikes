@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " y ",
+    "yxy"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:iron_block"
+    },
+    "y": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "result": {
+    "item": "simple_spikes:slime_spikes",
+    "count": 3
+  }
+}
