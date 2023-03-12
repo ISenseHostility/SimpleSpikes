@@ -14,7 +14,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class WoodenSpikes extends Block implements Spike {
     public WoodenSpikes() {
-        super(Properties.copy(Blocks.OAK_PLANKS).requiresCorrectToolForDrops());
+        super(Properties.copy(Blocks.OAK_PLANKS));
     }
 
     @Override
