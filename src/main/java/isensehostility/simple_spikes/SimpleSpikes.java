@@ -20,11 +20,14 @@ public class SimpleSpikes {
     }
 
     public enum SpikeTypes {
-        COPPER(1, SpikeSources.SPIKE),
-        IRON(2, SpikeSources.SPIKE),
-        GOLD(2, SpikeSources.SPIKE),
-        DIAMOND(4, SpikeSources.SPIKE),
-        NETHERITE(8, SpikeSources.SPIKE_IGNORE_ARMOR),
+
+        WOODEN(1, SpikeSources.SPIKE),
+        STONE(2, SpikeSources.SPIKE),
+        COPPER(3, SpikeSources.SPIKE),
+        IRON(3, SpikeSources.SPIKE),
+        GOLD(3, SpikeSources.SPIKE),
+        DIAMOND(6, SpikeSources.SPIKE),
+        NETHERITE(10, SpikeSources.SPIKE_IGNORE_ARMOR),
         SLIME(3, SpikeSources.SLIME_SPIKE);
 
         private final int damage;
