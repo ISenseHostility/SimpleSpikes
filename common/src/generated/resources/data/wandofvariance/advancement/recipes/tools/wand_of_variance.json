@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "sleep_in_darkness:sleep_in_darkness"
+        "recipe": "simple_spikes:simple_spikes"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "sleep_in_darkness:sleep_in_darkness"
+      "simple_spikes:simple_spikes"
     ]
   }
 }

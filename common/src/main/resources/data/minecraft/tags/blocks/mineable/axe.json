@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "simple_spikes:oak_spikes",
+    "simple_spikes:dark_oak_spikes",
+    "simple_spikes:pale_oak_spikes",
+    "simple_spikes:birch_spikes",
+    "simple_spikes:spruce_spikes",
+    "simple_spikes:jungle_spikes",
+    "simple_spikes:acacia_spikes",
+    "simple_spikes:cherry_spikes",
+    "simple_spikes:mangrove_spikes",
+    "simple_spikes:warped_spikes",
+    "simple_spikes:crimson_spikes"
+    ]
+}

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "sleep_in_darkness:item/sleep_in_darkness"
+    "layer0": "simple_spikes:item/simple_spikes"
   }
 }

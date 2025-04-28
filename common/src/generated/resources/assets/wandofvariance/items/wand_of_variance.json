@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "sleep_in_darkness:item/sleep_in_darkness"
+    "model": "simple_spikes:item/simple_spikes"
   }
 }

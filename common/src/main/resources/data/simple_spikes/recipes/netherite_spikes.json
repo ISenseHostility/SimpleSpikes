@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " y ",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "simple_spikes:diamond_spikes"
+    },
+    "y": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "simple_spikes:netherite_spikes",
+    "count": 3
+  }
+}

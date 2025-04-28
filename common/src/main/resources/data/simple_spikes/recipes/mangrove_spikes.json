@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " y ",
+    "y y"
+  ],
+  "key": {
+    "y": {
+      "item": "minecraft:mangrove_planks"
+    }
+  },
+  "result": {
+    "item": "simple_spikes:mangrove_spikes",
+    "count": 3
+  }
+}

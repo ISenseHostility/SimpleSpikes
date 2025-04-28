@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " y ",
+    "y y"
+  ],
+  "key": {
+    "y": {
+      "item": "minecraft:warped_planks"
+    }
+  },
+  "result": {
+    "item": "simple_spikes:warped_spikes",
+    "count": 3
+  }
+}
