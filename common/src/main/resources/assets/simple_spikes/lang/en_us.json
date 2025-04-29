@@ -39,6 +39,8 @@
   "item.simple_spikes.stone_spikes": "Stone Spikes",
   "item.simple_spikes.cobblestone_spikes": "Cobblestone Spikes",
 
+  "itemGroup.simple_spikes.simple_spikes": "Simple Spikes",
+
   "death.attack.simple_spike": "%1$s found out spikes are sharp",
   "death.attack.simple_spike_ignore_armor": "%1$s was pierced by a spike",
   "death.attack.simple_spike_slime": "%1$s didn't bounce high enough",

@@ -27,6 +27,7 @@ public class ModBlocks {
     public static Block mangroveSpikes;
     public static Block cherrySpikes;
     public static Block paleOakSpikes;
+    public static Block cobblestoneSpikes;
 
     public static void initialize(BalmBlocks blocks) {
         blocks.registerBlock((location) -> ModBlocks.copperSpikes = new CopperSpikes(createBlockKey(location)), id("copper_spikes"));
@@ -36,6 +37,7 @@ public class ModBlocks {
         blocks.registerBlock((location) -> ModBlocks.netheriteSpikes = new NetheriteSpikes(createBlockKey(location)), id("netherite_spikes"));
         blocks.registerBlock((location) -> ModBlocks.slimeSpikes = new SlimeSpikes(createBlockKey(location)), id("slime_spikes"));
         blocks.registerBlock((location) -> ModBlocks.stoneSpikes = new StoneSpikes(createBlockKey(location)), id("stone_spikes"));
+        blocks.registerBlock((location) -> ModBlocks.cobblestoneSpikes = new StoneSpikes(createBlockKey(location)), id("cobblestone_spikes"));
         blocks.registerBlock((location) -> ModBlocks.oakSpikes = new WoodenSpikes(createBlockKey(location)), id("oak_spikes"));
         blocks.registerBlock((location) -> ModBlocks.darkOakSpikes = new WoodenSpikes(createBlockKey(location)), id("dark_oak_spikes"));
         blocks.registerBlock((location) -> ModBlocks.jungleSpikes = new WoodenSpikes(createBlockKey(location)), id("jungle_spikes"));

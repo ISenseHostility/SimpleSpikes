@@ -6,6 +6,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import tech.jarno.simple_spikes.block.ModBlocks;
 
 import static tech.jarno.simple_spikes.SimpleSpikes.id;
@@ -29,6 +30,7 @@ public class ModItems {
     public static Item mangroveSpikesItem;
     public static Item cherrySpikesItem;
     public static Item paleOakSpikesItem;
+    public static Item cobblestoneSpikesItem;
 
     public static void initialize(BalmItems items) {
         items.registerItem((location) -> ModItems.copperSpikesItem = new BlockItem(ModBlocks.copperSpikes, createDefaultItemProperties(location)), id("copper_spikes"));
@@ -49,29 +51,32 @@ public class ModItems {
         items.registerItem((location) -> ModItems.jungleSpikesItem = new BlockItem(ModBlocks.jungleSpikes, createDefaultItemProperties(location)), id("jungle_spikes"));
         items.registerItem((location) -> ModItems.paleOakSpikesItem = new BlockItem(ModBlocks.paleOakSpikes, createDefaultItemProperties(location)), id("pale_oak_spikes"));
         items.registerItem((location) -> ModItems.warpedSpikesItem = new BlockItem(ModBlocks.warpedSpikes, createDefaultItemProperties(location)), id("warped_spikes"));
+        items.registerItem((location) -> ModItems.cobblestoneSpikesItem = new BlockItem(ModBlocks.cobblestoneSpikes, createDefaultItemProperties(location)), id("cobblestone_spikes"));
 
         Item[] ALL_SPIKES = {
-                copperSpikesItem,
-                diamondSpikesItem,
-                goldSpikesItem,
-                ironSpikesItem,
-                netheriteSpikesItem,
-                slimeSpikesItem,
-                stoneSpikesItem,
-                oakSpikesItem,
-                darkOakSpikesItem,
-                birchSpikesItem,
-                jungleSpikesItem,
-                acaciaSpikesItem,
-                spruceSpikesItem,
-                warpedSpikesItem,
-                crimsonSpikesItem,
-                mangroveSpikesItem,
-                cherrySpikesItem,
-                paleOakSpikesItem
+            copperSpikesItem,
+            diamondSpikesItem,
+            goldSpikesItem,
+            ironSpikesItem,
+            netheriteSpikesItem,
+            slimeSpikesItem,
+            stoneSpikesItem,
+            oakSpikesItem,
+            darkOakSpikesItem,
+            birchSpikesItem,
+            jungleSpikesItem,
+            acaciaSpikesItem,
+            spruceSpikesItem,
+            warpedSpikesItem,
+            crimsonSpikesItem,
+            mangroveSpikesItem,
+            cherrySpikesItem,
+            paleOakSpikesItem,
+            cobblestoneSpikesItem
         };
 
-        items.addToCreativeModeTab(ResourceLocation.fromNamespaceAndPath("minecraft", "functional_blocks"), () -> ALL_SPIKES);
+        items.registerCreativeModeTab(() -> new ItemStack(diamondSpikesItem), id("simple_spikes"));
+        items.addToCreativeModeTab(id("simple_spikes"), () -> ALL_SPIKES);
     }
 
     private static ResourceKey<Item> createItemKey(ResourceLocation location) {
