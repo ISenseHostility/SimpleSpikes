@@ -21,8 +21,6 @@ public class ForgeSimpleSpikes {
         if (FMLEnvironment.dist.isClient()) {
             BalmClient.initializeMod(SimpleSpikes.MOD_ID, loadContext, ForgeSimpleSpikesClient::initialize);
         }
-
-        MinecraftForge.EVENT_BUS.register(this);
     }
 
 }

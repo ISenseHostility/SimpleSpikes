@@ -1,5 +1,6 @@
 package tech.jarno.simple_spikes.item;
 
+import java.util.List;
 import net.blay09.mods.balm.api.item.BalmItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -53,30 +54,29 @@ public class ModItems {
         items.registerItem((location) -> ModItems.warpedSpikesItem = new BlockItem(ModBlocks.warpedSpikes, createDefaultItemProperties(location)), id("warped_spikes"));
         items.registerItem((location) -> ModItems.cobblestoneSpikesItem = new BlockItem(ModBlocks.cobblestoneSpikes, createDefaultItemProperties(location)), id("cobblestone_spikes"));
 
-        Item[] ALL_SPIKES = {
-            copperSpikesItem,
-            diamondSpikesItem,
-            goldSpikesItem,
-            ironSpikesItem,
-            netheriteSpikesItem,
-            slimeSpikesItem,
-            stoneSpikesItem,
-            oakSpikesItem,
-            darkOakSpikesItem,
-            birchSpikesItem,
-            jungleSpikesItem,
-            acaciaSpikesItem,
-            spruceSpikesItem,
-            warpedSpikesItem,
-            crimsonSpikesItem,
-            mangroveSpikesItem,
-            cherrySpikesItem,
-            paleOakSpikesItem,
-            cobblestoneSpikesItem
-        };
-
-        items.registerCreativeModeTab(() -> new ItemStack(diamondSpikesItem), id("simple_spikes"));
-        items.addToCreativeModeTab(id("simple_spikes"), () -> ALL_SPIKES);
+        items.registerCreativeModeTab(() -> new ItemStack(ModItems.diamondSpikesItem), id("simple_spikes"));
+        items.addToCreativeModeTab(id("simple_spikes"), () -> new Item[] {
+                copperSpikesItem,
+                    diamondSpikesItem,
+                    goldSpikesItem,
+                    ironSpikesItem,
+                    netheriteSpikesItem,
+                    slimeSpikesItem,
+                    stoneSpikesItem,
+                    oakSpikesItem,
+                    darkOakSpikesItem,
+                    birchSpikesItem,
+                    jungleSpikesItem,
+                    acaciaSpikesItem,
+                    spruceSpikesItem,
+                    warpedSpikesItem,
+                    crimsonSpikesItem,
+                    mangroveSpikesItem,
+                    cherrySpikesItem,
+                    paleOakSpikesItem,
+                    cobblestoneSpikesItem
+            }
+        );
     }
 
     private static ResourceKey<Item> createItemKey(ResourceLocation location) {

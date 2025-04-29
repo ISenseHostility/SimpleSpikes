@@ -14,8 +14,6 @@ public class NeoForgeSimpleSpikes {
         final var context = new NeoForgeLoadContext(modEventBus);
 
         Balm.initializeMod(SimpleSpikes.MOD_ID, context, new SimpleSpikes());
-
-        NeoForge.EVENT_BUS.register(this);
     }
 
 }
