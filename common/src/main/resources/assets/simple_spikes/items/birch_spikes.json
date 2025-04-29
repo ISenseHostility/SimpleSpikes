@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "simple_spikes:item/dark_oak_spikes"
+    "model": "simple_spikes:item/birch_spikes"
   }
 }
