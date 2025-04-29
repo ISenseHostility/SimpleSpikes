@@ -2,6 +2,7 @@ package tech.jarno.simple_spikes.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.damagesource.DamageSource;
@@ -16,7 +17,6 @@ import net.minecraft.world.level.block.SlimeBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import tech.jarno.simple_spikes.util.SpikeUtil;
 
 public class SlimeSpikes extends SlimeBlock implements Spike {
 
@@ -29,7 +29,9 @@ public class SlimeSpikes extends SlimeBlock implements Spike {
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         if (entity instanceof LivingEntity stepper && !level.isClientSide()) {
-            Holder<DamageType> spikeDamageType = SpikeUtil.getDamageTypeForSpike(level, this);
+            Holder<DamageType> spikeDamageType = level.registryAccess()
+                    .lookupOrThrow(Registries.DAMAGE_TYPE)
+                    .getOrThrow(getType().getDamageType());
 
             stepper.hurtServer((ServerLevel) level, new DamageSource(spikeDamageType), getType().getDamage());
         }
