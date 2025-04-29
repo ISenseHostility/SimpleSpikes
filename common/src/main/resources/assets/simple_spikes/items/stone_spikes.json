@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "simple_spikes:item/stone_spikes"
+  }
+}

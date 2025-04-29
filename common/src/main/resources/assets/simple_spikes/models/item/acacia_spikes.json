@@ -1,6 +1,6 @@
 {
-  "model": {
-    "type": "minecraft:model",
-    "model": "minecraft:item/acacia_spikes"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "simple_spikes:item/acacia_spikes"
   }
 }
